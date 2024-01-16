@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    // res.setHeader('Cross-Origin-Resource-Policy', 'cross-origin');
+    res.setHeader('Cross-Origin-Resource-Policy', 'cross-origin');
     next()
 })
 app.use(express.static('fonts'))
